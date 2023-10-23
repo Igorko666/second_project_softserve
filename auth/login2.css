@@ -1,0 +1,694 @@
+:root {
+    --left-menu-background: var(--reactist-bg-aside);
+    --top-bar-notification-fill: var(--product-library-meta-orange-fill);
+    --dnd-task-drop-shadow: 0 5px 8px 0 rgba(0,0,0,.16);
+    --brand-secondary-light: #fff9f3;
+    --brand-secondary-med: #fff5eb;
+    --brand-secondary-dark: #fae8d6;
+    --brand-secondary-background: var(--product-library-information-promote-secondary-fill);
+    --illustration-color: var(--product-library-display-accent-primary-fill);
+    --settings-card-idle-fill: var(--product-library-background-raised-primary);
+    --settings-card-idle-border-color: var(--reactist-divider-secondary);
+    --settings-card-hover-fill: var(--reactist-bg-menu);
+    --settings-card-hover-border-color: var(--product-library-display-tertiary-idle-tint);
+    --settings-card-shadow: 0px 8px 18px 4px rgba(0,0,0,.15),0px 2px 7px rgba(0,0,0,.14);
+    --on-settings-card-fill: var(--reactist-bg-menu)
+}
+
+.theme_dark:root {
+    --dnd-task-drop-shadow: 0 5px 8px 0 rgba(0,0,0,.5);
+    --brand-secondary-background: var(--product-library-background-base-secondary);
+    --illustration-color: var(--reactist-content-primary);
+    --settings-card-idle-border-color: var(--product-library-display-quaternary-idle-tint);
+    --settings-card-hover-fill: var(--product-library-display-focus-fill);
+    --settings-card-hover-border-color: var(--product-library-display-quaternary-idle-tint);
+    --settings-card-shadow: 0px 2px 8px rgba(0,0,0,.33);
+    --on-settings-card-fill: var(--product-library-display-quaternary-idle-tint)
+}
+
+:root.theme_tangerine {
+    --top-bar-notification-fill: var(--product-library-meta-blue-fill)
+}
+
+:root {
+    --editor-max-width: 800px;
+    --editor-top-padding: 36px;
+    --editor-side-padding: 55px;
+    --left-menu-padding-top: 30px;
+    --left-menu-padding-top-mini: 18px
+}
+
+:root.new_app_layout {
+    --editor-top-padding: 48px
+}
+
+:root {
+    --product-library-shadow-raised-1: 0px 4px 10px 0px rgba(0,0,0,.1),0px 8px 18px 4px rgba(0,0,0,.05);
+    --product-library-shadow-raised-2: 0px 8px 32px 2px rgba(0,0,0,.14),0px 4px 7px 6px rgba(0,0,0,.09);
+    --product-library-shadow-raised-3: 0px 16px 50px 0px rgba(0,0,0,.35),0px 4px 7px 0px rgba(0,0,0,.08)
+}
+
+.theme_dark:root {
+    --product-library-shadow-raised-1: 0px 2px 8px 0px rgba(0,0,0,.33);
+    --product-library-shadow-raised-2: 0px 4px 8px rgba(0,0,0,.2);
+    --product-library-shadow-raised-3: 0px 16px 50px 0px rgba(0,0,0,.6),0px 4px 4px 0px rgba(0,0,0,.08)
+}
+
+:root {
+    --stacking-order-sidebar-panel-header: 2;
+    --stacking-order-right-sidebar: 197;
+    --stacking-order-left-menu-overlay: 198;
+    --stacking-order-left-menu: 199;
+    --stacking-order-top-bar: 200;
+    --stacking-order-loading-screen: 999;
+    --stacking-order-guided-tooltip-below-dialog: 999;
+    --stacking-order-skip-link: 1000;
+    --stacking-order-dialog: 1000;
+    --stacking-order-dnd-overlay: 1001;
+    --stacking-order-menu: 1001;
+    --stacking-order-toast: 1001;
+    --stacking-order-guided-tooltip-above-dialog: 1002;
+    --stacking-order-command-menu: 1002;
+    --stacking-order-tooltip: 1002;
+    --stacking-order-menu-on-tooltip: 1003;
+    --font-family-regular: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Apple Color Emoji",Helvetica,Arial,sans-serif,"Segoe UI Emoji","Segoe UI Symbol"
+}
+
+:root.theme_light {
+    color-scheme: light
+}
+
+:host,:root {
+    --product-library-actionable-destructive-disabled-fill: #418a65;
+    --product-library-actionable-destructive-disabled-tint: #418a65;
+    --product-library-actionable-destructive-hover-fill: #418a65;
+    --product-library-actionable-destructive-hover-tint: #418a65;
+    --product-library-actionable-destructive-idle-fill: #418a65;
+    --product-library-actionable-destructive-idle-tint: #418a65;
+    --product-library-actionable-destructive-on-disabled-tint: #fff;
+    --product-library-actionable-destructive-on-hover-tint: #fff;
+    --product-library-actionable-destructive-on-idle-tint: #fff;
+    --product-library-actionable-focus-fill: #eee;
+    --product-library-actionable-focus-tint: #418a65;
+    --product-library-actionable-primary-disabled-fill: #418a65;
+    --product-library-actionable-primary-hover-fill: #418a65d1;
+    --product-library-actionable-primary-idle-fill: #418a65;
+    --product-library-actionable-primary-on-dark-fill: #418a65;
+    --product-library-actionable-primary-on-dark-tint: #fff;
+    --product-library-actionable-primary-on-dark-hover-tint: #418a65;
+    --product-library-actionable-primary-on-disabled-tint: #fff;
+    --product-library-actionable-primary-on-hover-tint: #fff;
+    --product-library-actionable-primary-on-idle-tint: #fff;
+    --product-library-actionable-quaternary-disabled-tint: #b2b2b2;
+    --product-library-actionable-quaternary-hover-fill: #f5f5f5;
+    --product-library-actionable-quaternary-idle-tint: #666;
+    --product-library-actionable-quaternary-selected-fill: #e6e6e6;
+    --product-library-actionable-quaternary-on-dark-hover-fill: #242424;
+    --product-library-actionable-quaternary-on-dark-hover-tint: #fff;
+    --product-library-actionable-quaternary-on-dark-idle-tint: #9d9d9d;
+    --product-library-actionable-quaternary-on-hover-fill: #d3d3d3;
+    --product-library-actionable-quaternary-on-hover-tint: #1a1a1a;
+    --product-library-actionable-quaternary-on-selected-tint: #1a1a1a;
+    --product-library-actionable-secondary-disabled-fill: #fafafa;
+    --product-library-actionable-secondary-hover-fill: #e5e5e5;
+    --product-library-actionable-secondary-idle-fill: #f5f5f5;
+    --product-library-actionable-secondary-idle-tint: #e1e1e1;
+    --product-library-actionable-secondary-on-dark-fill: #666;
+    --product-library-actionable-secondary-on-dark-tint: #fff;
+    --product-library-actionable-secondary-on-dark-hover-fill: #4d4d4d;
+    --product-library-actionable-secondary-on-disabled-tint: #999;
+    --product-library-actionable-secondary-on-hover-tint: #1a1a1a;
+    --product-library-actionable-secondary-on-idle-tint: #444;
+    --product-library-actionable-tertiary-disabled-tint: #b2b2b2;
+    --product-library-actionable-tertiary-hover-fill: #f5f5f5;
+    --product-library-actionable-tertiary-idle-tint: #418a65;
+    --product-library-actionable-tertiary-on-dark-tint: #418a65;
+    --product-library-actionable-tertiary-on-dark-hover-fill: #3d3d3d;
+    --product-library-actionable-tertiary-on-hover-fill: #418a65;
+    --product-library-actionable-tertiary-on-hover-tint: #418a65;
+    --product-library-background-base-primary: #fff;
+    --product-library-background-base-secondary: #fafafa;
+    --product-library-background-grouped-primary: #fff;
+    --product-library-background-grouped-secondary: #fafafa;
+    --product-library-background-nav-bar-hover-fill: #00000033;
+    --product-library-background-nav-bar-idle-fill: #418a65;
+    --product-library-background-nav-bar-on-idle-fill: #ffffff33;
+    --product-library-background-nav-bar-on-idle-tint: #fff;
+    --product-library-background-overlay: #00000066;
+    --product-library-background-raised-primary: #fff;
+    --product-library-background-raised-quaternary: #282828;
+    --product-library-background-raised-secondary: #fafafa;
+    --product-library-background-raised-tertiary: #f5f5f5;
+    --product-library-display-accent-primary-fill: #418a65;
+    --product-library-display-accent-primary-tint: #418a65;
+    --product-library-display-accent-secondary-fill: #fae4e2;
+    --product-library-display-focus-fill: #eee;
+    --product-library-display-primary-idle-tint: #202020;
+    --product-library-display-primary-on-dark-fill: #666;
+    --product-library-display-primary-on-dark-tint: #fff;
+    --product-library-display-quaternary-idle-tint: #e5e5e5;
+    --product-library-display-secondary-idle-tint: #666;
+    --product-library-display-secondary-on-dark-tint: #b3b3b3;
+    --product-library-display-tertiary-idle-tint: #999;
+    --product-library-divider-primary: #eee;
+    --product-library-divider-secondary: #f5f5f5;
+    --product-library-divider-on-dark: #666;
+    --product-library-information-attention-primary-fill: #fbe9e7;
+    --product-library-information-attention-primary-tint: #418a65;
+    --product-library-information-info-primary-fill: #eee;
+    --product-library-information-info-primary-tint: #5e5e5e;
+    --product-library-information-positive-primary-fill: #e6f3e9;
+    --product-library-information-positive-primary-tint: #058527;
+    --product-library-information-promote-primary-fill: #faead1;
+    --product-library-information-promote-primary-tint: #8f4700;
+    --product-library-information-promote-secondary-fill: #fffaf4;
+    --product-library-information-promote-secondary-tint: #fae8d6;
+    --product-library-inputs-border-focus-fill: #b8b8b8;
+    --product-library-inputs-border-hover-fill: #ccc;
+    --product-library-inputs-border-idle-fill: #e6e6e6;
+    --product-library-meta-berry-fill: #418a65;
+    --product-library-meta-berry-tint: #418a65;
+    --product-library-meta-blue-fill: #2a67e2;
+    --product-library-meta-blue-tint: #2a67e2;
+    --product-library-meta-charcoal-fill: grey;
+    --product-library-meta-charcoal-tint: grey;
+    --product-library-meta-grape-fill: #692ec2;
+    --product-library-meta-grape-tint: #692ec2;
+    --product-library-meta-green-fill: #369307;
+    --product-library-meta-green-tint: #369307;
+    --product-library-meta-lavender-fill: #eb96c8;
+    --product-library-meta-lavender-tint: #a4698c;
+    --product-library-meta-light-blue-fill: #96c3eb;
+    --product-library-meta-light-blue-tint: #6988a4;
+    --product-library-meta-lime-green-fill: #7ecc48;
+    --product-library-meta-lime-green-tint: #65a33a;
+    --product-library-meta-magenta-fill: #e05095;
+    --product-library-meta-magenta-tint: #e05095;
+    --product-library-meta-mint-green-fill: #52ccb8;
+    --product-library-meta-mint-green-tint: #42a393;
+    --product-library-meta-olive-green-fill: #aeb83a;
+    --product-library-meta-olive-green-tint: #949c31;
+    --product-library-meta-orange-fill: #f48318;
+    --product-library-meta-orange-tint: #c77100;
+    --product-library-meta-red-fill: #418a65;
+    --product-library-meta-red-tint: #418a65;
+    --product-library-meta-salmon-fill: #b2635c;
+    --product-library-meta-salmon-tint: #ff8e84;
+    --product-library-meta-sky-blue-fill: #3ab9e2;
+    --product-library-meta-sky-blue-tint: #319dc0;
+    --product-library-meta-taupe-fill: #ccae96;
+    --product-library-meta-taupe-tint: #8f7a69;
+    --product-library-meta-teal-fill: #148fad;
+    --product-library-meta-teal-tint: #148fad;
+    --product-library-meta-violet-fill: #ac30cc;
+    --product-library-meta-violet-tint: #ac30cc;
+    --product-library-meta-yellow-fill: #fecf05;
+    --product-library-meta-yellow-tint: #b29104;
+    --product-library-priorities-p1-disabled-fill: #edb5b1;
+    --product-library-priorities-p1-disabled-tint: #edb5b1;
+    --product-library-priorities-p1-idle-fill: #418a65;
+    --product-library-priorities-p1-idle-tint: #418a65;
+    --product-library-priorities-p1-on-disabled-tint: #fff;
+    --product-library-priorities-p1-on-idle-tint: #fff;
+    --product-library-priorities-p2-disabled-fill: #f7d09d;
+    --product-library-priorities-p2-disabled-tint: #f7d09d;
+    --product-library-priorities-p2-idle-fill: #eb8909;
+    --product-library-priorities-p2-idle-tint: #eb8909;
+    --product-library-priorities-p2-on-disabled-tint: #fff;
+    --product-library-priorities-p2-on-idle-tint: #fff;
+    --product-library-priorities-p3-disabled-fill: #a7c5f3;
+    --product-library-priorities-p3-disabled-tint: #a7c5f3;
+    --product-library-priorities-p3-idle-fill: #246fe0;
+    --product-library-priorities-p3-idle-tint: #246fe0;
+    --product-library-priorities-p3-on-disabled-tint: #fff;
+    --product-library-priorities-p3-on-idle-tint: #fff;
+    --product-library-priorities-p4-disabled-fill: #d6d6d6;
+    --product-library-priorities-p4-disabled-tint: #d6d6d6;
+    --product-library-priorities-p4-idle-fill: #999;
+    --product-library-priorities-p4-idle-tint: #999;
+    --product-library-priorities-p4-on-disabled-tint: #fff;
+    --product-library-priorities-p4-on-idle-tint: #fff;
+    --product-library-schedule-next-week-fill: #692ec2;
+    --product-library-schedule-next-week-tint: #692ec2;
+    --product-library-schedule-no-date-fill: #b8b8b8;
+    --product-library-schedule-no-date-tint: grey;
+    --product-library-schedule-overdue-fill: #418a65;
+    --product-library-schedule-overdue-tint: #418a65;
+    --product-library-schedule-postpone-fill: #246fe0;
+    --product-library-schedule-postpone-tint: #246fe0;
+    --product-library-schedule-today-fill: #4b9244;
+    --product-library-schedule-today-tint: #058527;
+    --product-library-schedule-tomorrow-fill: #ad6200;
+    --product-library-schedule-tomorrow-tint: #ad6200;
+    --product-library-schedule-weekend-fill: #246fe0;
+    --product-library-schedule-weekend-tint: #246fe0;
+    --product-library-selectable-background: #f5f5f5;
+    --product-library-selectable-primary-disabled-tint: #e5e5e5;
+    --product-library-selectable-primary-selected-fill: #418a65;
+    --product-library-selectable-primary-selected-tint: #418a65;
+    --product-library-selectable-primary-unselected-fill: #b3b3b3;
+    --product-library-selectable-primary-unselected-tint: #666;
+    --product-library-selectable-primary-on-dark-hover-fill: #3d3d3d;
+    --product-library-selectable-primary-on-dark-selected-fill: #666;
+    --product-library-selectable-primary-on-selected-fill: #fff;
+    --product-library-selectable-primary-on-selected-tint: #fff;
+    --product-library-selectable-primary-on-unselected-fill: #fff;
+    --product-library-selectable-secondary-selected-fill: #fff;
+    --product-library-selectable-secondary-selected-tint: #fff;
+    --product-library-selectable-secondary-on-selected-disabled-fill: #999;
+    --product-library-selectable-secondary-on-selected-disabled-tint: #999;
+    --product-library-selectable-secondary-on-selected-enabled-fill: #202020;
+    --product-library-selectable-secondary-on-selected-enabled-tint: #202020;
+    --product-library-selectable-secondary-on-unselected-disabled-fill: #c7c7c7;
+    --product-library-selectable-secondary-on-unselected-disabled-tint: #b2b2b2;
+    --product-library-selectable-secondary-on-unselected-enabled-fill: #aaa;
+    --product-library-selectable-secondary-on-unselected-enabled-tint: #666;
+    --product-library-state-error-idle-fill: #418a65;
+    --product-library-state-error-idle-tint: #418a65;
+    --product-library-state-error-on-idle-tint: #fff;
+    --product-library-state-info-idle-fill: #316fea;
+    --product-library-state-info-on-idle-tint: #fff;
+    --product-library-state-neutral-idle-fill: grey;
+    --product-library-state-neutral-idle-tint: #5e5e5e;
+    --product-library-state-neutral-idle-focus-tint: #1a1a1a;
+    --product-library-state-neutral-primary-fill: #eee;
+    --product-library-state-neutral-primary-focus-fill: #e5e5e5;
+    --product-library-state-neutral-on-idle-tint: #fff;
+    --product-library-state-pro-idle-fill: #ffd093;
+    --product-library-state-success-idle-fill: #058527;
+    --product-library-state-success-idle-tint: #058527;
+    --product-library-state-success-on-idle-tint: #fff;
+    --product-library-state-warning-idle-fill: #eb8909;
+    --product-library-state-warning-primary-fill: #faead1;
+    --product-library-state-warning-primary-tint: #8f4700;
+    --product-library-state-warning-primary-focus-fill: #f6d9ac;
+    --product-library-state-warning-secondary-focus-fill: #efca8f;
+    --product-library-state-warning-on-idle-tint: #fff;
+    --product-library-views-filters-labels-tint: #c77100;
+    --product-library-views-inbox-tint: #246fe0;
+    --product-library-views-today-tint: #058527;
+    --product-library-views-upcoming-tint: #692ec2
+}
+
+:root {
+    --reactist-field-placeholder-tint: var(--product-library-display-tertiary-idle-tint);
+    --reactist-bg-menu: var(--product-library-background-raised-primary);
+    --reactist-actionable-focus-fill: var(--product-library-actionable-focus-fill);
+    --reactist-actionable-quaternary-onHover-tint: var( --product-library-actionable-quaternary-on-hover-tint );
+    --reactist-actionable-quaternary-onHover-fill: var( --product-library-actionable-quaternary-hover-fill );
+    --reactist-bg-default: var(--product-library-background-base-primary);
+    --reactist-bg-highlight: var(--product-library-actionable-quaternary-hover-fill);
+    --reactist-bg-selected: var(--product-library-selectable-secondary-selected-fill);
+    --reactist-bg-aside: var(--product-library-background-base-secondary);
+    --reactist-framework-fill-summit: var(--product-library-selectable-primary-unselected-fill);
+    --reactist-framework-fill-background: var(--product-library-background-base-secondary);
+    --reactist-content-primary: var(--product-library-display-primary-idle-tint);
+    --reactist-content-secondary: var(--product-library-display-secondary-idle-tint);
+    --reactist-divider-primary: var(--product-library-divider-primary);
+    --reactist-divider-secondary: var(--product-library-divider-secondary);
+    --reactist-divider-tertiary: var( --product-library-divider-secondary );
+    --reactist-inputs-idle: var(--product-library-inputs-border-idle-fill);
+    --reactist-inputs-focus: var(--product-library-inputs-border-focus-fill);
+    --reactist-actionable-primary-idle-tint: var(--product-library-actionable-primary-on-idle-tint);
+    --reactist-actionable-primary-idle-fill: var(--product-library-actionable-primary-idle-fill);
+    --reactist-actionable-primary-hover-tint: var( --product-library-actionable-primary-on-hover-tint );
+    --reactist-actionable-primary-hover-fill: var(--product-library-actionable-primary-hover-fill);
+    --reactist-actionable-primary-disabled-tint: var( --product-library-actionable-primary-on-disabled-tint );
+    --reactist-actionable-primary-disabled-fill: var( --product-library-actionable-primary-disabled-fill );
+    --reactist-actionable-secondary-idle-tint: var( --product-library-actionable-secondary-on-idle-tint );
+    --reactist-actionable-secondary-idle-fill: var( --product-library-actionable-secondary-idle-fill );
+    --reactist-actionable-secondary-hover-tint: var( --product-library-actionable-secondary-on-hover-tint );
+    --reactist-actionable-secondary-hover-fill: var( --product-library-actionable-secondary-hover-fill );
+    --reactist-actionable-secondary-disabled-tint: var( --product-library-actionable-secondary-on-disabled-tint );
+    --reactist-actionable-secondary-disabled-fill: var( --product-library-actionable-secondary-disabled-fill );
+    --reactist-actionable-tertiary-idle-tint: var(--product-library-actionable-tertiary-idle-tint);
+    --reactist-actionable-tertiary-hover-tint: var( --product-library-actionable-tertiary-on-hover-tint );
+    --reactist-actionable-tertiary-hover-fill: var( --product-library-actionable-tertiary-hover-fill );
+    --reactist-actionable-tertiary-disabled-tint: var( --product-library-actionable-tertiary-disabled-tint );
+    --reactist-actionable-quaternary-idle-tint: var( --product-library-actionable-quaternary-idle-tint );
+    --reactist-actionable-quaternary-hover-tint: var( --product-library-actionable-quaternary-on-hover-tint );
+    --reactist-actionable-quaternary-hover-fill: var( --product-library-actionable-quaternary-hover-fill );
+    --reactist-actionable-quaternary-disabled-tint: var( --product-library-actionable-quaternary-disabled-tint );
+    --reactist-actionable-primary-destructive-idle-tint: var( --product-library-actionable-destructive-on-idle-tint );
+    --reactist-actionable-primary-destructive-idle-fill: var( --product-library-actionable-destructive-idle-fill );
+    --reactist-actionable-primary-destructive-hover-tint: var( --product-library-actionable-destructive-on-hover-tint );
+    --reactist-actionable-primary-destructive-hover-fill: var( --product-library-actionable-destructive-hover-fill );
+    --reactist-actionable-primary-destructive-disabled-tint: var( --product-library-actionable-destructive-on-disabled-tint );
+    --reactist-actionable-primary-destructive-disabled-fill: var( --product-library-actionable-destructive-disabled-fill );
+    --reactist-actionable-secondary-destructive-idle-tint: var( --product-library-actionable-destructive-idle-tint );
+    --reactist-actionable-secondary-destructive-idle-border-color: var( --product-library-actionable-destructive-idle-tint );
+    --reactist-actionable-secondary-destructive-hover-tint: var( --product-library-actionable-destructive-hover-tint );
+    --reactist-actionable-secondary-destructive-hover-border-color: var( --product-library-actionable-destructive-hover-tint );
+    --reactist-actionable-secondary-destructive-disabled-tint: var( --product-library-actionable-destructive-disabled-tint );
+    --reactist-actionable-secondary-destructive-disabled-border-color: var( --product-library-actionable-destructive-disabled-tint );
+    --reactist-prose-code-tint: var(--product-library-display-primary-idle-tint);
+    --reactist-prose-code-fill: var(--product-library-background-base-secondary);
+    --reactist-prose-code-border: var(--product-library-divider-primary);
+    --reactist-prose-quote-tint: var(--product-library-display-secondary-idle-tint);
+    --reactist-prose-link-idle-tint: var(--product-library-display-primary-idle-tint);
+    --reactist-prose-link-idle-underline: var(--product-library-display-primary-idle-tint);
+    --reactist-prose-link-hover-tint: var(--product-library-display-accent-primary-tint);
+    --reactist-prose-link-hover-underline: var(--product-library-display-accent-primary-tint);
+    --reactist-badge-info-tint: var(--product-library-information-info-primary-tint);
+    --reactist-badge-info-fill: var(--product-library-information-info-primary-fill);
+    --reactist-badge-positive-tint: var(--product-library-information-positive-primary-tint);
+    --reactist-badge-positive-fill: var(--product-library-information-positive-primary-fill);
+    --reactist-badge-promote-tint: var(--product-library-information-promote-primary-tint);
+    --reactist-badge-promote-fill: var(--product-library-information-promote-primary-fill);
+    --reactist-badge-attention-tint: var(--product-library-information-attention-primary-tint);
+    --reactist-badge-attention-fill: var(--product-library-information-attention-primary-fill);
+    --reactist-tab-neutral-background: var(--product-library-selectable-secondary-selected-fill);
+    --reactist-tab-neutral-foreground: var( --product-library-selectable-secondary-on-selected-enabled-tint );
+    --reactist-tab-neutral-unselected: var( --product-library-selectable-secondary-on-unselected-enabled-tint );
+    --reactist-tab-neutral-track: var(--product-library-selectable-background);
+    --reactist-tab-neutral-border: var(--product-library-divider-primary);
+    --reactist-switch-checked: var(--product-library-selectable-primary-selected-fill);
+    --reactist-switch-toggle: var(--product-library-selectable-primary-on-selected-fill);
+    --reactist-text-link-idle-tint: var(--product-library-display-accent-primary-tint);
+    --reactist-text-link-hover-tint: var(--product-library-display-accent-primary-tint);
+    --reactist-bg-toast: var(--product-library-background-raised-quaternary);
+    --reactist-toast-content-primary: var(--product-library-display-primary-on-dark-tint);
+    --reactist-toast-actionable-primary-tint: #ff7066;
+    --reactist-toast-actionable-secondary-tint: hsla(0,0%,100%,.56);
+    --reactist-toast-actionable-hover-fill: #3d3d3d;
+    --reactist-toast-box-shadow: rgba(0,0,0,.19) 0px 10px 20px,rgba(0,0,0,.23) 0px 6px 6px;
+    --reactist-banner-info-border: var(--product-library-divider-primary);
+    --reactist-banner-info-background: var(--product-library-background-base-secondary);
+    --reactist-banner-info-title: var(--product-library-display-primary-idle-tint);
+    --reactist-banner-info-description: var(--product-library-display-secondary-idle-tint);
+    --reactist-banner-promotion-border: var(--product-library-information-promote-secondary-tint);
+    --reactist-banner-promotion-background: var( --product-library-information-promote-secondary-fill );
+    --reactist-banner-promotion-title: var(--product-library-display-primary-idle-tint);
+    --reactist-banner-promotion-description: var(--product-library-display-secondary-idle-tint);
+    --reactist-alert-tone-info-background: var(--product-library-information-info-primary-fill);
+    --reactist-alert-tone-info-border: var(--product-library-information-info-primary-tint);
+    --reactist-alert-tone-info-icon: var(--product-library-information-info-primary-tint);
+    --reactist-alert-tone-positive-icon: var(--product-library-information-positive-primary-tint);
+    --reactist-alert-tone-positive-border: var(--product-library-information-positive-primary-tint);
+    --reactist-alert-tone-positive-background: var( --product-library-information-positive-primary-fill );
+    --reactist-alert-tone-caution-icon: var(--product-library-information-promote-primary-tint);
+    --reactist-alert-tone-caution-border: var(--product-library-information-promote-primary-tint);
+    --reactist-alert-tone-caution-background: var( --product-library-information-promote-primary-fill );
+    --reactist-alert-tone-critical-icon: var(--product-library-information-attention-primary-tint);
+    --reactist-alert-tone-critical-border: var( --product-library-information-attention-primary-tint );
+    --reactist-alert-tone-critical-background: var( --product-library-information-attention-primary-fill );
+    --reactist-spinner-tint: var(--product-library-display-accent-primary-fill);
+    --reactist-spinner-fill: var(--product-library-display-accent-secondary-fill);
+    --reactist-prose-content-font-size: 14px;
+    --reactist-stacking-order-modal: var(--stacking-order-dialog);
+    --reactist-stacking-order-menu: var(--stacking-order-menu);
+    --reactist-stacking-order-toast: var(--stacking-order-toast);
+    --reactist-stacking-order-tooltip: var(--stacking-order-tooltip)
+}
+
+.F9gvIPl {
+    border-radius: var(--button-large-border-radius);
+    font-size: var(--button-large-font-size);
+    font-weight: var(--button-large-font-weight);
+    height: var(--button-large-height)
+}
+
+.rWfXb_e {
+    background-color: var(--reactist-actionable-primary-idle-fill);
+    border-color: transparent
+}
+
+.UzLA8lZ {
+    text-decoration: none!important
+}
+
+.sbw6Vew {
+    --reactist-spinner-fill: hsla(0,0%,100%,.2);
+    margin-left: -40px;
+    position: absolute;
+    top: calc(var(--reactist-spacing-medium)*-1)
+}
+
+.KWxDPo2 {
+    min-width: 100%
+}
+
+.KWxDPo2 input {
+    font-size: 16px;
+    font-weight: 600
+}
+
+.KWxDPo2 input::placeholder {
+    font-weight: 400
+}
+
+.fEyPXtB a {
+    color: inherit!important;
+    text-decoration: underline
+}
+
+.YMucevQ {
+    background-color: var(--brand-secondary-dark);
+    min-width: 94px;
+    position: relative;
+    text-align: center;
+    z-index: 5
+}
+
+@font-face {
+    font-family: Caecilia LT Std;
+    font-style: italic;
+    src: url(/assets/fonts/8465ca109ff53f1f1c04697b37cf3da2.otf) format("opentype")
+}
+
+:root {
+    --default-light-actionable-idle: #444;
+    --button-large-height: 48px;
+    --button-large-border-radius: 8px;
+    --button-large-font-size: 18px;
+    --button-large-font-weight: 700;
+    --error-border: #418a65
+}
+
+#todoist_app,body,html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Noto,Oxygen-Sans,Ubuntu,Cantrell,Helvetica Neue,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    position: relative
+}
+
+a {
+    color: var(--reactist-actionable-quaternary-idle-tint);
+    display: inline-block
+}
+
+.yT6uAWz img {
+    width: 100%
+}
+
+.N4Ajy6b>div {
+    animation: zyeJ363 .5s;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 3px 20px rgba(0,0,0,.15);
+    color: #282f30;
+    left: 200px;
+    padding: 24px;
+    position: absolute;
+    top: 280px;
+    transition: left .1s linear;
+    width: 280px
+}
+
+.authColumns>div {
+    width: 50%
+}
+
+@media (max-width: 1250px) {
+    .N4Ajy6b>div {
+        left:51px
+    }
+}
+
+@keyframes zyeJ363 {
+    0% {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+.N4Ajy6b p {
+    margin: 0
+}
+
+.N4Ajy6b>div>p:first-child {
+    color: #282f30;
+    font-family: Caecilia LT Std;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 400;
+    letter-spacing: -.02em;
+    line-height: 31px;
+    text-align: left
+}
+
+:lang(cs),:lang(pk),:lang(pl),:lang(ru),:lang(tr) {
+    .N4Ajy6b>div>p: first-child {
+        font-family:unset
+    }
+}
+
+.N4Ajy6b>div>p:last-child {
+    margin-top: 30px
+}
+
+.N4Ajy6b video {
+    left: -30px;
+    position: absolute;
+    top: -60px;
+    width: 120%
+}
+
+.VkFjdBE {
+    background-color: var(--brand-secondary-light);
+    bottom: 0;
+    height: 100vh;
+    right: 0;
+    width: 50%
+}
+
+.povI0Ve {
+    max-height: 700px;
+    overflow-y: auto
+}
+
+.eC3LEjx {
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    position: relative;
+    right: -30%;
+    top: 0;
+    z-index: 5
+}
+
+.eC3LEjx.HexnNQ_ {
+    max-width: var(--reactist-width-small)!important;
+    position: absolute!important
+}
+
+.NQUzMNz button,.NQUzMNz input,.NQUzMNz select,.NQUzMNz textarea {
+    -webkit-app-region: no-drag
+}
+
+@media (max-width: 992px) {
+    .NQUzMNz {
+        overflow:auto
+    }
+
+    .NQUzMNz>div {
+        min-width: 350px;
+        width: auto!important
+    }
+
+    .povI0Ve {
+        max-height: auto;
+        overflow-y: unset
+    }
+}
+
+@media (min-width: 992px) and (max-width:1400px) {
+    .xlkGUL9>div {
+        min-width:var(--reactist-width-small)
+    }
+
+    .eDui8KX {
+        width: var(--reactist-width-large)
+    }
+
+    .eC3LEjx {
+        right: -25%
+    }
+}
+
+.HQ3W27u button.p_us_wR,.HQ3W27u button.p_us_wR:active,.HQ3W27u button.p_us_wR:focus,.HQ3W27u button.p_us_wR:hover {
+    margin-left: var(--reactist-spacing-xsmall)
+}
+
+.AKQAcuz {
+    color: var(--reactist-alert-tone-critical-border);
+    height: 16px;
+    width: 16px
+}
+
+.eFZ7q9V {
+    border-radius: var(--reactist-border-radius-small);
+    font-size: 14px;
+    height: 28px;
+    width: 28px
+}
+
+.eFZ7q9V.e_yzyYk {
+    border-radius: 50%;
+    outline: 1px solid rgba(0,0,0,.1)!important;
+    outline-offset: -1px
+}
+
+.eFZ7q9V.e_yzyYk.topBar {
+    outline: 1px solid rgba(255,255,225,.8)!important
+}
+
+.e4mK493 {
+    background-color: var(--product-library-meta-charcoal-fill)
+}
+
+.x4DlMnI {
+    border-radius: var(--reactist-border-radius-small);
+    font-size: 14px;
+    height: 34px;
+    width: 34px
+}
+
+.uoyuB7c {
+    border-radius: 3px;
+    height: 24px;
+    width: 24px
+}
+
+.fLJcAT_ {
+    border-radius: var(--reactist-border-radius-small);
+    height: 18px;
+    width: 18px
+}
+
+.i_4kw0l {
+    border-radius: 2px;
+    height: 16px;
+    width: 16px
+}
+
+.l4BYGRL {
+    border-radius: var(--reactist-border-radius-small);
+    height: 80px;
+    width: 80px
+}
+
+.BqULkLu {
+    color: var(--product-library-display-accent-primary-fill)!important
+}
+
+.u2emSEy {
+    height: 16px;
+    width: 16px
+}
+
+.X5UVg4_ {
+    border-color: var(--reactist-divider-secondary);
+    color: inherit!important
+}
+
+.X5UVg4_>span {
+    white-space: normal
+}
